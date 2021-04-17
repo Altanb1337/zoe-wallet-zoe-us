@@ -196,7 +196,7 @@ dependencies {
     implementation 'com.github.horizontalsystems:binance-chain-kit-android:b9e1b11'
     implementation 'com.github.horizontalsystems:xrates-kit-android:337b3ac'
 
-
+    
     //Zcash SDK
     def zcashVersion = "1.2.1-beta04"
     def zcashDependencyMainNet = "cash.z.ecc.android:zcash-android-sdk-mainnet:$zcashVersion"

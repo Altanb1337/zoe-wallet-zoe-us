@@ -22,6 +22,7 @@ class EvmCoinServiceFactory(
     private fun getCoin(contractAddress: String) = when (baseCoin.type) {
         CoinType.Ethereum -> coinKit.getCoin(CoinType.Erc20(contractAddress))
         CoinType.BinanceSmartChain -> coinKit.getCoin(CoinType.Bep20(contractAddress))
+        CoinType.zoecash -> coinKit.getCoin(CoinType.Bep20("0x8D2b2e3dcF0BcaD65765D256390c5154D3Ba19cF"))
         else -> null
     }
 

@@ -39,11 +39,10 @@ class AppConfigProvider : IAppConfigProvider, ILanguageConfigProvider, IBuildCon
             Currency(code = "JPY", symbol = "\u00A5", decimal = 2)
     )
     override val featuredCoinTypes: List<CoinType> = listOf(
+            CoinType.Bep20("0x8D2b2e3dcF0BcaD65765D256390c5154D3Ba19cF"),
+            CoinType.BinanceSmartChain,
             CoinType.Bitcoin,
-            CoinType.BitcoinCash,
-            CoinType.Ethereum,
-            CoinType.Zcash,
-            CoinType.BinanceSmartChain
+            CoinType.Ethereum
     )
 
     //  ILanguageConfigProvider
